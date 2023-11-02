@@ -1,7 +1,6 @@
 ---
-layout: home
-title: "Bienvenidos a Mi Blog"
-excerpt: "El lugar donde comparto mis pensamientos, historias y conocimientos."
+layout: post
+title: "Mi Blog"
 ---
 
 # Bienvenidos a mi Blog
