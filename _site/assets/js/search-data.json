@@ -1,0 +1,79 @@
+{"0": {
+    "doc": "CPTS",
+    "title": "CPTS",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy. ",
+    "url": "/CPTS/cpts.html",
+    
+    "relUrl": "/CPTS/cpts.html"
+  },"1": {
+    "doc": "Exploitation",
+    "title": "Exploitation",
+    "content": "Aquí trobaràs els apunts sobre procés d’explotació de vulnerabilitats ( exploiting ) . ",
+    "url": "/CPTS/exploitation.html",
+    
+    "relUrl": "/CPTS/exploitation.html"
+  },"2": {
+    "doc": "Inici",
+    "title": "Bienvenidos a mi Blog",
+    "content": "¡Hola! Soy [Tu Nombre], y este es mi espacio personal en la web donde escribo sobre [temas de tu interés]. ",
+    "url": "/#bienvenidos-a-mi-blog",
+    
+    "relUrl": "/#bienvenidos-a-mi-blog"
+  },"3": {
+    "doc": "Inici",
+    "title": "Últimas Entradas",
+    "content": "Aquí encontrarás mis últimos artículos, espero que te sean de utilidad y disfrutes leyéndolos tanto como yo disfruto escribiéndolos. ",
+    "url": "/#%C3%BAltimas-entradas",
+    
+    "relUrl": "/#últimas-entradas"
+  },"4": {
+    "doc": "Inici",
+    "title": "Sobre Mí",
+    "content": "Soy [tu profesión o actividad principal], apasionado por [tus pasiones]. Este blog es una ventana a mi mundo, donde comparto todo lo que me parece interesante y valioso. ",
+    "url": "/#sobre-m%C3%AD",
+    
+    "relUrl": "/#sobre-mí"
+  },"5": {
+    "doc": "Inici",
+    "title": "Contáctame",
+    "content": "Si quieres ponerte en contacto conmigo, puedes enviarme un email o seguirme en Twitter, Instagram o LinkedIn. ¡Espero que disfrutes de mi blog! . ",
+    "url": "/#cont%C3%A1ctame",
+    
+    "relUrl": "/#contáctame"
+  },"6": {
+    "doc": "Inici",
+    "title": "Inici",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"7": {
+    "doc": "Information Gathering",
+    "title": "Information Gathering",
+    "content": "Aquí trobaràs els apunts sobre procés de reconeixement ( info gathering ) . ",
+    "url": "/CPTS/informationGathering.html",
+    
+    "relUrl": "/CPTS/informationGathering.html"
+  },"8": {
+    "doc": "Lateral Movement",
+    "title": "Lateral Movement",
+    "content": "Aquí trobaràs els apunts sobre el procés d’escalada i moviment lateral (pivoting). ",
+    "url": "/CPTS/lateralMovement.html",
+    
+    "relUrl": "/CPTS/lateralMovement.html"
+  },"9": {
+    "doc": "Post Exploitation",
+    "title": "Post Exploitation",
+    "content": "Aquí trobaràs els apunts sobre que fer un cop has trobat un exploit a una vulnerabilitat existent. ",
+    "url": "/CPTS/postExploitation.html",
+    
+    "relUrl": "/CPTS/postExploitation.html"
+  },"10": {
+    "doc": "Information Gathering",
+    "title": "Information Gathering",
+    "content": "Aquí trobaràs els apunts sobre procés de recerca de vulnerabilitats (vuln assessment) . ",
+    "url": "/CPTS/vulnerabilityAssessment.html",
+    
+    "relUrl": "/CPTS/vulnerabilityAssessment.html"
+  }
+}
