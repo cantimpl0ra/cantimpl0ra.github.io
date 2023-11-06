@@ -1,5 +1,12 @@
-title: Just the Blog Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: cantimpl0ra's Blog
+description: Road to CPTS
 theme: just-the-docs
+
+logo: /assets/images/logo1.png
+favico: /assets/images/logo1.png
+color_scheme: dark
+enable_copy_code_button: true
+footer_content: "Made with ♥️ by cantimpl0ra"
+
 
 url: https://cantimpl0ra.github.io

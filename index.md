@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Mi Blog"
+title: "Inici"
+nav_order: 1
 ---
 
 # Bienvenidos a mi Blog
