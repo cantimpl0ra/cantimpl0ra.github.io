@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "Blog"	
 nav_order: 4
 has_children: true
