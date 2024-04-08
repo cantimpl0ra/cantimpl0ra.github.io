@@ -1,79 +1,247 @@
 {"0": {
+    "doc": "Introduction to Malware Analysis",
+    "title": "Introduction to Malware Analysis",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/10_introMalwareAnalysis.html",
+    
+    "relUrl": "/CDSA/10_introMalwareAnalysis.html"
+  },"1": {
+    "doc": "Javascript Deobfuscation",
+    "title": "Javascript Deobfuscation",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/11_javascriptDeobfuscation.html",
+    
+    "relUrl": "/CDSA/11_javascriptDeobfuscation.html"
+  },"2": {
+    "doc": "YARA and Sigma for SOC Analysts",
+    "title": "YARA and Sigma for SOC Analysts",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/12_YARA_&_Sigma.html",
+    
+    "relUrl": "/CDSA/12_YARA_&_Sigma.html"
+  },"3": {
+    "doc": "Introduction to Digital Forensics",
+    "title": "Introduction to Digital Forensics",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/13_introDigitalForensics.html",
+    
+    "relUrl": "/CDSA/13_introDigitalForensics.html"
+  },"4": {
+    "doc": "Detecting Windows Attacks with Splunk",
+    "title": "Detecting Windows Attacks with Splunk",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/14_detectingWindowsAttacksWithSplunk.html",
+    
+    "relUrl": "/CDSA/14_detectingWindowsAttacksWithSplunk.html"
+  },"5": {
+    "doc": "Security Incident Response",
+    "title": "Security Incident Response",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/15_securityIncidentResponse.html",
+    
+    "relUrl": "/CDSA/15_securityIncidentResponse.html"
+  },"6": {
+    "doc": "Incident Handling Process",
+    "title": "1.0) Incident Handling Response",
+    "content": " ",
+    "url": "/CDSA/1_incidentHandlingProcess.html#10-incident-handling-response",
+    
+    "relUrl": "/CDSA/1_incidentHandlingProcess.html#10-incident-handling-response"
+  },"7": {
+    "doc": "Incident Handling Process",
+    "title": "A) INTRODUCTION",
+    "content": "A.1 Definicions . | Event: Acció que passa en un sistema. Exemple: Un usuari envia un correu electrònic, un clic del ratolí, un firewall autoritzant una connexió. | Incident: És un event amb repercussions negatives. Exemple: Dades robades, accés sense autorització, instal·lació i execució de malware. | Incident Handling: Conjunt d’accions prèviament definides amb claredat amb l’objectiu de gestionar els incidents de seguretat en una empresa (xarxa). | . ⚠️ Un dels recursos més utilitzats en IH és el document NIST’s Computer Security Incident Handling Guide. A.2 Cyber Kill Chain . A.k.a the attack lifecycle descriu com els atacs es manifesten en un sistema. Consta de 7 fases: . | Fase 1: Recon. És la fase inicial i consisteix en recopilar informació i triar el target. Pot esser pasiva o activa. | Fase 2: Weaponize. Es desenvolupa el malware que serà utilitzat per a guanyar accés. Aquest és incorporat en un exploit i/o payload amb l’objectiu d’aconseguir accés remot a la màquina target de manera “indetectable” pel EDR i persistent. | Fase 3: Delivery. L’exploit o el payload és lliurat a la victima. Normalment es fa mitjançant phishing, però hi han altres tècniques com la de deixar un USB maliciós, la intrusió fisica, etc… . | Fase 4: Exploitation. S’activa el payload o exploit lliurat. | Fase 5: Installation. The initial stager is executed and is running on the compromised machine . | Fase 6: Command Control. L’atacant estableix la connexió remota amb la màquina compromesa. | Fase 7: Action and Objectives. L’atacant executa l’objectiu de l’atac, ja sigui exfiltració de dades, ransomware, escalada de privilegis, etc. | . ⚠️ El nostre objectiu és que l’atacant no progressi en aquesta cadena. Video explicació Cyber Kill Chain . ",
+    "url": "/CDSA/1_incidentHandlingProcess.html#a-introduction",
+    
+    "relUrl": "/CDSA/1_incidentHandlingProcess.html#a-introduction"
+  },"8": {
+    "doc": "Incident Handling Process",
+    "title": "B) THE INCIDENT HANDLING PROCESS",
+    "content": "B.1 Incident Handling Process Overview . Defineix la capacitat que té una organització per preparar-se, detectar i respondre a events maliciosos. Segons el NIST(link) consta de 4 fases: . | Fase 1: Preparation (1). Té l’objectiu d’establir la capacitat de gestionar incidents en una organització. A més a més, també s’estableix protecció de manera preventiva. Requisits: Treballdors qualificats, Programa d’entre … . | Fase 1: Preparation (2). Aquí enfatitzem la protecció contra incidents. Mesures de protecció recomanades: DMARC(email), Endpoint Hardening(EDR), Network protection, privilege identity management / MFA / Passwords, Vulnerability Scanning, User Awarness Training, Active Directory Security Assessment, Purple Team exercises. | . ⚠️ En aquest punt ja tenim un protocol establert contra incidents. | Fase 2: Detection and Analysis (1): Aquesta fase implica tots els aspectes relacionats amb la detecció d’un incident. És molt recomanable crear nivells de detecció categoritzant la nostra red : . | Network Perimeter -&gt; firewall, DMZ, etc | Network internal level -&gt; local firewalls, host intrusion detection system, etc | Endpoint level -&gt; antivirus, EDR | Application level -&gt; Application logs, service logs, etc | . | Fase 2: Detection and Analysis (2): Quan es comença una investigació l’objectiu és detectar què i com ha passat. La investigació comença amb la informació que ha fet detectar l’incident. Amb aquesta info iniciarem un 3-step cyclic process, el qual anirem iterant. IMAGE . | Fase 3: Containment, Erradicarion and Recovery. Quan la investigació és completada i ja entenem quin tipus d’incident estem tractant és el moment de contenir. És a dir, prevenir que l’incident faci més mal. | Contenció: Prenem acció per a que l’incident no s’escampi més | Erradicació: Un cop contingut l’incident passem a eliminar allò que ha provocat l’incident i ens assegurem que l’atacant està completament fora del sistema. | Recuperació. Tornem el sistema un altre cop a la normalitat. Incrementem la protecció i el monitoreig dels dispositius/sistems atacats. | . | Fase 4: Post-Incident Activity. En aquesta fase el nostre objectiu és documentar l’incident de manera que l’empresa pugui prendre mesures i millorar les defenses. Això es fa mitjançant un report tècnic i reunions amb els equips. En aquesta fase podem aprofitar per formar nous treballdors. | . Videoexplicació incident handling process . ",
+    "url": "/CDSA/1_incidentHandlingProcess.html#b-the-incident-handling-process",
+    
+    "relUrl": "/CDSA/1_incidentHandlingProcess.html#b-the-incident-handling-process"
+  },"9": {
+    "doc": "Incident Handling Process",
+    "title": "Incident Handling Process",
+    "content": " ",
+    "url": "/CDSA/1_incidentHandlingProcess.html",
+    
+    "relUrl": "/CDSA/1_incidentHandlingProcess.html"
+  },"10": {
+    "doc": "Security Monitoring and SIEM Fundamentals",
+    "title": "Security Monitoring and SIEM Fundamentals",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/2_securityMonitoring.html",
+    
+    "relUrl": "/CDSA/2_securityMonitoring.html"
+  },"11": {
+    "doc": "Windows Event Logs & Finding Evil",
+    "title": "Windows Event Logs & Finding Evil",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/3_windowsEventLogs_&_findingEvil.html",
+    
+    "relUrl": "/CDSA/3_windowsEventLogs_&_findingEvil.html"
+  },"12": {
+    "doc": "Threat Hunting & Hunting with Elastic",
+    "title": "Threat Hunting & Hunting with Elastic",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/4_threatHunting.html",
+    
+    "relUrl": "/CDSA/4_threatHunting.html"
+  },"13": {
+    "doc": "Understanding Log Sources & Investigating with Splunk ",
+    "title": "Understanding Log Sources & Investigating with Splunk ",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/5_logSources_&_investigatingWithSplunk.html",
+    
+    "relUrl": "/CDSA/5_logSources_&_investigatingWithSplunk.html"
+  },"14": {
+    "doc": "Windows Attacks & Defense",
+    "title": "Windows Attacks & Defense",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/6_windowsAttacks_&_Defense.html",
+    
+    "relUrl": "/CDSA/6_windowsAttacks_&_Defense.html"
+  },"15": {
+    "doc": "Intro to Network Traffic Analysis",
+    "title": "Intro to Network Traffic Analysis",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/7_networkTrafficAnalysis.html",
+    
+    "relUrl": "/CDSA/7_networkTrafficAnalysis.html"
+  },"16": {
+    "doc": "Intermediate Network Traffic Analysis",
+    "title": "Intermediate Network Traffic Analysis",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/8_networkTrafficAnalysis2.html",
+    
+    "relUrl": "/CDSA/8_networkTrafficAnalysis2.html"
+  },"17": {
+    "doc": "Working with IDS and IPS",
+    "title": "Working with IDS and IPS",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/9_workingWithIDS_IPS.html",
+    
+    "relUrl": "/CDSA/9_workingWithIDS_IPS.html"
+  },"18": {
+    "doc": "Blog",
+    "title": "Blog",
+    "content": "Aquí trobaràs els meus pensaments plasmats en el blog personal. ",
+    "url": "/Blog/blog.html",
+    
+    "relUrl": "/Blog/blog.html"
+  },"19": {
+    "doc": "CDSA",
+    "title": "CDSA",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "url": "/CDSA/cdsa.html",
+    
+    "relUrl": "/CDSA/cdsa.html"
+  },"20": {
     "doc": "CPTS",
     "title": "CPTS",
-    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy. ",
+    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en seguretat ofensiva (CERTIFIED PENETRATION TESTER SPECIALIST) . ",
     "url": "/CPTS/cpts.html",
     
     "relUrl": "/CPTS/cpts.html"
-  },"1": {
+  },"21": {
     "doc": "Exploitation",
     "title": "Exploitation",
     "content": "Aquí trobaràs els apunts sobre procés d’explotació de vulnerabilitats ( exploiting ) . ",
     "url": "/CPTS/exploitation.html",
     
     "relUrl": "/CPTS/exploitation.html"
-  },"2": {
+  },"22": {
+    "doc": "Hack My VM",
+    "title": "Hack My VM",
+    "content": "Aquí trobaràs les màquines resoltes de HackMyVM. ",
+    "url": "/WRITEUPS/hackMyVM.html",
+    
+    "relUrl": "/WRITEUPS/hackMyVM.html"
+  },"23": {
+    "doc": "Hack The Box",
+    "title": "Hack The Box",
+    "content": "Aquí trobaràs les màquines resoltes de HackTheBox. ",
+    "url": "/WRITEUPS/hackTheBox.html",
+    
+    "relUrl": "/WRITEUPS/hackTheBox.html"
+  },"24": {
     "doc": "Inici",
     "title": "Bienvenidos a mi Blog",
     "content": "¡Hola! Soy [Tu Nombre], y este es mi espacio personal en la web donde escribo sobre [temas de tu interés]. ",
     "url": "/#bienvenidos-a-mi-blog",
     
     "relUrl": "/#bienvenidos-a-mi-blog"
-  },"3": {
+  },"25": {
     "doc": "Inici",
     "title": "Últimas Entradas",
     "content": "Aquí encontrarás mis últimos artículos, espero que te sean de utilidad y disfrutes leyéndolos tanto como yo disfruto escribiéndolos. ",
     "url": "/#%C3%BAltimas-entradas",
     
     "relUrl": "/#últimas-entradas"
-  },"4": {
+  },"26": {
     "doc": "Inici",
     "title": "Sobre Mí",
     "content": "Soy [tu profesión o actividad principal], apasionado por [tus pasiones]. Este blog es una ventana a mi mundo, donde comparto todo lo que me parece interesante y valioso. ",
     "url": "/#sobre-m%C3%AD",
     
     "relUrl": "/#sobre-mí"
-  },"5": {
+  },"27": {
     "doc": "Inici",
     "title": "Contáctame",
     "content": "Si quieres ponerte en contacto conmigo, puedes enviarme un email o seguirme en Twitter, Instagram o LinkedIn. ¡Espero que disfrutes de mi blog! . ",
     "url": "/#cont%C3%A1ctame",
     
     "relUrl": "/#contáctame"
-  },"6": {
+  },"28": {
     "doc": "Inici",
     "title": "Inici",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"7": {
+  },"29": {
     "doc": "Information Gathering",
     "title": "Information Gathering",
     "content": "Aquí trobaràs els apunts sobre procés de reconeixement ( info gathering ) . ",
     "url": "/CPTS/informationGathering.html",
     
     "relUrl": "/CPTS/informationGathering.html"
-  },"8": {
+  },"30": {
     "doc": "Lateral Movement",
     "title": "Lateral Movement",
     "content": "Aquí trobaràs els apunts sobre el procés d’escalada i moviment lateral (pivoting). ",
     "url": "/CPTS/lateralMovement.html",
     
     "relUrl": "/CPTS/lateralMovement.html"
-  },"9": {
+  },"31": {
     "doc": "Post Exploitation",
     "title": "Post Exploitation",
     "content": "Aquí trobaràs els apunts sobre que fer un cop has trobat un exploit a una vulnerabilitat existent. ",
     "url": "/CPTS/postExploitation.html",
     
     "relUrl": "/CPTS/postExploitation.html"
-  },"10": {
-    "doc": "Information Gathering",
-    "title": "Information Gathering",
+  },"32": {
+    "doc": "Vuln Hub",
+    "title": "Vuln Hub",
+    "content": "Aquí trobaràs les màquines resoltes de Vuln Hub. ",
+    "url": "/WRITEUPS/vulnHub.html",
+    
+    "relUrl": "/WRITEUPS/vulnHub.html"
+  },"33": {
+    "doc": "Vulnerability Assessment",
+    "title": "Vulnerability Assessment",
     "content": "Aquí trobaràs els apunts sobre procés de recerca de vulnerabilitats (vuln assessment) . ",
     "url": "/CPTS/vulnerabilityAssessment.html",
     
     "relUrl": "/CPTS/vulnerabilityAssessment.html"
+  },"34": {
+    "doc": "Writeups",
+    "title": "Writeups",
+    "content": "Aquí trobaràs els writeups de les màquines ja resoltes. ",
+    "url": "/WRITEUPS/writeups.html",
+    
+    "relUrl": "/WRITEUPS/writeups.html"
   }
 }
