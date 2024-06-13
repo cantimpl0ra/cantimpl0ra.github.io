@@ -70,173 +70,159 @@
     "relUrl": "/CDSA/1_incidentHandlingProcess.html"
   },"10": {
     "doc": "Security Monitoring and SIEM Fundamentals",
+    "title": "A) SIEM and SOC FUNDAMENTALS",
+    "content": "A.1 SIEM definition and Fundamentals . -&gt; Security Information and Event Management (SIEM) engloba l’utilització de software el qual proporciona solucions i capacitats de gestionar la seguretat de les dades i la supervisió de events. -&gt; El SIEM neix el 2005 de la fusió del SIM i el SEM . -&gt; El SIEM recopila informació de diferents dispositius, la qual és analitzada pels professionals per tal de detectar potencials incidents. REQUISITS + USOS . | Log Aggregation and Normalization | Threat Alerting | Contextualization and Response | Compliance | . DATA FLOWS . | SIEM “ingereix” registres de diverses fonts. | Les dades són processades i normalitzades per a q es pugin entendre en els diferents eines del SIEM. | SOC teams utilitza aquestes dades ja processades per a crear “normes de detecció”. | . A.2 Introduction to ElasticStack . -&gt; ELK Elastic Stack explained: https://www.youtube.com/watch?v=4X0WLg05ASw . -&gt; Framework open-source que s’utilitza per l’exploració i anàlisis en temps real dels logs. Consta principalment de 3 applicacions: . | BEATS + LOGSTASH : Ingest | ELASTICSEARCH : Emmagatzema, busca i analitza | KIBANA : Visualització | . KIBANA QUERY LANGUAGE (KQL) . https://www.youtube.com/watch?v=wfqItAlUy8g . -&gt; És el llenguatge de consulta utilitzat per Kibana. Aquest permet als usuaris realitzar consultes avançades a les dades indexades a Elasticsearch per filtrar i buscar informació específica. Té les següents característiques: . | Estructura bàsica : Les “quèries” de KQL estan fetes principalment per field:value. Ex: event.code:4625 . | Free text search : Podem buscar per string, sense especificar el camp “field” . | Logical Operators . | Wildcards and Regular Expressions . | . A.3 SOC Definition and Fundamentals . -&gt; Un Security Operations Center (SOC) és un conjunt de professionals i tecnologies, que treballen conjuntament, amb l’objectiu de millorar constantment la seguretat. ROLS . | SOC Director | SOC Manager | Tier 1,2,3 Analyst | Detection Engineer | Incident Responder | Threat Intelligence Analyst | Security Engineer | Compliance and Governance Specialist | Security Awarness and Training Coordinator | . SOC 1 vs SOC 2 vs SOC 3 . IMAGEN !!!!!! . A.4 MITRE ATT&amp;CK and SECURITY OPERATIONS . -&gt; Adversarial Tactics, Techniques and Common Knowledge (ATT&amp;CK) és un recurs, constantment actualitzat, de les tècniques i procediments (TTPs) utilitzades pels “cyber threats actors”. USE CASES . | Detection and Response | Security evaluation and Gap Analysis | SOC Maturity Assessment | Threat Intelligence | Cyber Threah Intelligence Enrichment | Behavioral Anlytics Development | Red Teaming and Penetration Testing | Training and Education | . A.5 SIEM Use Case Development . -&gt; Els “Use Cases” estan dissenyats per a il·lustrar situacions on un producte o servei pugui ser utilitzat . DEVELOPMENT LIFECYCLE . | Requirements | Data Points | Log Validation | Design and Implementation | Documentation | Onboarding | Periodic Update/Fine-tuning | . ",
+    "url": "/CDSA/2_securityMonitoring.html#a-siem-and-soc-fundamentals",
+    
+    "relUrl": "/CDSA/2_securityMonitoring.html#a-siem-and-soc-fundamentals"
+  },"11": {
+    "doc": "Security Monitoring and SIEM Fundamentals",
+    "title": "B) SIEM VISUALIZATION DEVELOPMENT",
+    "content": "*Video amb la resolució dels exercisis.* . ",
+    "url": "/CDSA/2_securityMonitoring.html#b-siem-visualization-development",
+    
+    "relUrl": "/CDSA/2_securityMonitoring.html#b-siem-visualization-development"
+  },"12": {
+    "doc": "Security Monitoring and SIEM Fundamentals",
+    "title": "C) ALERT TRIAGING",
+    "content": "C.1 Triaging Process . | Initial Alert Review | Alert Classification | Alert Correlation | Enrichment of Alert Data | Risk Assessment | Contextual Analysis | Incident Response Planning | Consultation with IT Operation | Response Execution | Escalation | Coninuous Monitoring | De-escalation | . Videoexplicació del procés de triatge d’una alerta. ",
+    "url": "/CDSA/2_securityMonitoring.html#c-alert-triaging",
+    
+    "relUrl": "/CDSA/2_securityMonitoring.html#c-alert-triaging"
+  },"13": {
+    "doc": "Security Monitoring and SIEM Fundamentals",
     "title": "Security Monitoring and SIEM Fundamentals",
-    "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
+    "content": " ",
     "url": "/CDSA/2_securityMonitoring.html",
     
     "relUrl": "/CDSA/2_securityMonitoring.html"
-  },"11": {
+  },"14": {
     "doc": "Windows Event Logs & Finding Evil",
     "title": "Windows Event Logs & Finding Evil",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/3_windowsEventLogs_&_findingEvil.html",
     
     "relUrl": "/CDSA/3_windowsEventLogs_&_findingEvil.html"
-  },"12": {
+  },"15": {
     "doc": "Threat Hunting & Hunting with Elastic",
     "title": "Threat Hunting & Hunting with Elastic",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/4_threatHunting.html",
     
     "relUrl": "/CDSA/4_threatHunting.html"
-  },"13": {
+  },"16": {
     "doc": "Understanding Log Sources & Investigating with Splunk ",
     "title": "Understanding Log Sources & Investigating with Splunk ",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/5_logSources_&_investigatingWithSplunk.html",
     
     "relUrl": "/CDSA/5_logSources_&_investigatingWithSplunk.html"
-  },"14": {
+  },"17": {
     "doc": "Windows Attacks & Defense",
     "title": "Windows Attacks & Defense",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/6_windowsAttacks_&_Defense.html",
     
     "relUrl": "/CDSA/6_windowsAttacks_&_Defense.html"
-  },"15": {
+  },"18": {
     "doc": "Intro to Network Traffic Analysis",
     "title": "Intro to Network Traffic Analysis",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/7_networkTrafficAnalysis.html",
     
     "relUrl": "/CDSA/7_networkTrafficAnalysis.html"
-  },"16": {
+  },"19": {
     "doc": "Intermediate Network Traffic Analysis",
     "title": "Intermediate Network Traffic Analysis",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/8_networkTrafficAnalysis2.html",
     
     "relUrl": "/CDSA/8_networkTrafficAnalysis2.html"
-  },"17": {
+  },"20": {
     "doc": "Working with IDS and IPS",
     "title": "Working with IDS and IPS",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/9_workingWithIDS_IPS.html",
     
     "relUrl": "/CDSA/9_workingWithIDS_IPS.html"
-  },"18": {
-    "doc": "Blog",
-    "title": "Blog",
-    "content": "Aquí trobaràs els meus pensaments plasmats en el blog personal. ",
-    "url": "/Blog/blog.html",
-    
-    "relUrl": "/Blog/blog.html"
-  },"19": {
+  },"21": {
     "doc": "CDSA",
     "title": "CDSA",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en analista de seguritat defensiva (CERTIFIED DEFENSIVE SECURITY ANALYST) . ",
     "url": "/CDSA/cdsa.html",
     
     "relUrl": "/CDSA/cdsa.html"
-  },"20": {
+  },"22": {
     "doc": "CPTS",
     "title": "CPTS",
     "content": "Aquí trobaràs els meus apunts de HackTheBox Academy per obtenir el certificat en seguretat ofensiva (CERTIFIED PENETRATION TESTER SPECIALIST) . ",
     "url": "/CPTS/cpts.html",
     
     "relUrl": "/CPTS/cpts.html"
-  },"21": {
+  },"23": {
     "doc": "Exploitation",
     "title": "Exploitation",
     "content": "Aquí trobaràs els apunts sobre procés d’explotació de vulnerabilitats ( exploiting ) . ",
     "url": "/CPTS/exploitation.html",
     
     "relUrl": "/CPTS/exploitation.html"
-  },"22": {
+  },"24": {
     "doc": "Hack My VM",
     "title": "Hack My VM",
     "content": "Aquí trobaràs les màquines resoltes de HackMyVM. ",
     "url": "/WRITEUPS/hackMyVM.html",
     
     "relUrl": "/WRITEUPS/hackMyVM.html"
-  },"23": {
+  },"25": {
     "doc": "Hack The Box",
     "title": "Hack The Box",
     "content": "Aquí trobaràs les màquines resoltes de HackTheBox. ",
     "url": "/WRITEUPS/hackTheBox.html",
     
     "relUrl": "/WRITEUPS/hackTheBox.html"
-  },"24": {
-    "doc": "Inici",
-    "title": "Bienvenidos a mi Blog",
-    "content": "¡Hola! Soy [Tu Nombre], y este es mi espacio personal en la web donde escribo sobre [temas de tu interés]. ",
-    "url": "/#bienvenidos-a-mi-blog",
-    
-    "relUrl": "/#bienvenidos-a-mi-blog"
-  },"25": {
-    "doc": "Inici",
-    "title": "Últimas Entradas",
-    "content": "Aquí encontrarás mis últimos artículos, espero que te sean de utilidad y disfrutes leyéndolos tanto como yo disfruto escribiéndolos. ",
-    "url": "/#%C3%BAltimas-entradas",
-    
-    "relUrl": "/#últimas-entradas"
   },"26": {
     "doc": "Inici",
-    "title": "Sobre Mí",
-    "content": "Soy [tu profesión o actividad principal], apasionado por [tus pasiones]. Este blog es una ventana a mi mundo, donde comparto todo lo que me parece interesante y valioso. ",
-    "url": "/#sobre-m%C3%AD",
-    
-    "relUrl": "/#sobre-mí"
-  },"27": {
-    "doc": "Inici",
-    "title": "Contáctame",
-    "content": "Si quieres ponerte en contacto conmigo, puedes enviarme un email o seguirme en Twitter, Instagram o LinkedIn. ¡Espero que disfrutes de mi blog! . ",
-    "url": "/#cont%C3%A1ctame",
-    
-    "relUrl": "/#contáctame"
-  },"28": {
-    "doc": "Inici",
     "title": "Inici",
-    "content": " ",
+    "content": "Este blog es una ventana a mi mundo, donde comparto todo lo que me parece interesante y valioso. ¡Espero que disfrutes de mi blog! . ",
     "url": "/",
     
     "relUrl": "/"
-  },"29": {
+  },"27": {
     "doc": "Information Gathering",
     "title": "Information Gathering",
     "content": "Aquí trobaràs els apunts sobre procés de reconeixement ( info gathering ) . ",
     "url": "/CPTS/informationGathering.html",
     
     "relUrl": "/CPTS/informationGathering.html"
-  },"30": {
+  },"28": {
     "doc": "Lateral Movement",
     "title": "Lateral Movement",
     "content": "Aquí trobaràs els apunts sobre el procés d’escalada i moviment lateral (pivoting). ",
     "url": "/CPTS/lateralMovement.html",
     
     "relUrl": "/CPTS/lateralMovement.html"
-  },"31": {
+  },"29": {
     "doc": "Post Exploitation",
     "title": "Post Exploitation",
     "content": "Aquí trobaràs els apunts sobre que fer un cop has trobat un exploit a una vulnerabilitat existent. ",
     "url": "/CPTS/postExploitation.html",
     
     "relUrl": "/CPTS/postExploitation.html"
-  },"32": {
+  },"30": {
     "doc": "Vuln Hub",
     "title": "Vuln Hub",
     "content": "Aquí trobaràs les màquines resoltes de Vuln Hub. ",
     "url": "/WRITEUPS/vulnHub.html",
     
     "relUrl": "/WRITEUPS/vulnHub.html"
-  },"33": {
+  },"31": {
     "doc": "Vulnerability Assessment",
     "title": "Vulnerability Assessment",
     "content": "Aquí trobaràs els apunts sobre procés de recerca de vulnerabilitats (vuln assessment) . ",
     "url": "/CPTS/vulnerabilityAssessment.html",
     
     "relUrl": "/CPTS/vulnerabilityAssessment.html"
-  },"34": {
+  },"32": {
     "doc": "Writeups",
     "title": "Writeups",
     "content": "Aquí trobaràs els writeups de les màquines ja resoltes. ",
